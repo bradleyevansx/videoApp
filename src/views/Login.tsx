@@ -25,7 +25,7 @@ const Login = () => {
   return (
     <div>
       <p>Login</p>
-      <button onClick={signInWithGoogle} disabled={authing}>
+      <button className="button" onClick={signInWithGoogle} disabled={authing}>
         Sign In With Google
       </button>
     </div>

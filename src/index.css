@@ -1,4 +1,12 @@
-:root {
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.button {
+  @apply bg-blue-900;
+}
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -66,4 +74,43 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+html {
+  @apply bg-zinc-900;
+}
+
+.container-colors {
+  @apply border border-zinc-600 bg-zinc-800 rounded-lg;
+}
+
+.primary-btn {
+  @apply py-1 px-3 border border-transparent standard-text  rounded-md text-white bg-zinc-700 hover:bg-zinc-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-500 focus:bg-zinc-900;
+}
+
+.red-btn {
+  @apply py-1 px-3 border border-transparent standard-text  rounded-md text-white bg-red-700 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-500 focus:bg-red-900;
+}
+
+.green-btn {
+  @apply py-1 px-3 border border-transparent standard-text  rounded-md text-white bg-green-700 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-500 focus:bg-green-900;
+}
+
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+.standard-text {
+  @apply text-sm sm:text-sm md:text-base lg:text-lg font-medium;
+}
+
+.out {
+  transform: translateY(30px);
+  transition: transform 0.4s ease-in-out;
+}
+
+.in {
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
 }
